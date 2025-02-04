@@ -5,25 +5,29 @@ import { Typography, Accordion, AccordionHeader, AccordionBody } from "@material
 
 const FAQS = [
   {
-    title: "1. How do I register for the AI Conference 2023?",
-    desc: "You can register for the AI Conference 2023 by visiting our registration page. Follow the simple steps to complete your registration and secure your spot at the conference.",
+    title: "1. How do I register for the Holi Madness event?",
+    desc: "Register for the Holi Madness event by reaching out to us via our social media channels or by giving us a call. You’ll find our contact details at the bottom of the page.",
   },
   {
     title: "2. What are the registration fees, and what is included?",
-    desc: "It really matters and then like it really doesn't matter. What matters is the people who are sparked by it. And the people who are like offended by it, it doesn't matter. Because it's about motivating the doers. Because I'm here to follow my dreams and inspire other people to follow their dreams, too. We're not always in the position that we want to be at. We're constantly growing. We're constantly making mistakes. We're constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don't appreciate the moment until it's passed.",
+    desc: "The registration fees depend on the plan you choose. We offer three options: STANDARD, DELUXE, and LUXURY. What's truly important is the experience and the people you’ll meet. For detailed information on each plan, check out the event poster or contact us using the details at the bottom of the page.",
   },
   {
     title: "3. Can I get a refund if I need to cancel my registration?",
-    desc: "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one who believed it? If everything I did failed - which it doesn't, it actually succeeds - just the fact that I'm willing to fail is an inspiration. People are so scared to lose that they don't even try. Like, one thing people can't say is that I'm not trying, and I'm not trying my hardest, and I'm not trying to do the best way I know how.",
+    desc: "Unfortunately, we don’t offer refunds for cancellations. However, in some cases, we may consider a refund at our discretion. To request a refund, please contact us directly, and we’ll review your situation individually.",
   },
   {
     title: "4. Will there be on-site registration available?",
-    desc: "I always felt like I could do anything. That's the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down by their perception of themselves. If you're taught you can't do anything, you won't do anything. I was taught I could do everything. If everything I did failed - which it doesn't, it actually succeeds - just the fact that I'm willing to fail is an inspiration. People are so scared to lose that they don't even try. Like, one thing people can't say is that I'm not trying, and I'm not trying my hardest, and I'm not trying to do the best way I know how.",
+    desc: "Yes, on-site registration will be available, but it depends on the availability of passes. We typically sell out fast, so the chances of securing a pass at the last minute are low. Additionally, please note that the prices of passes may increase on the day of the event at our discretion. To avoid any hassle and secure the best price, we highly recommend booking your pass now.",
   },
   {
-    title: "5. What is the dress code for the conference?",
-    desc: "There's nothing I really wanted to do in life that I wasn't able to get good at. That's my skill. I'm not really specifically talented at anything except for the ability to learn. That's what I do. That's what I'm here for. Don't be afraid to be wrong because you can't learn anything from a compliment. I always felt like I could do anything. That's the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down by their perception of themselves. If you're taught you can't do anything, you won't do anything. I was taught I could do everything.",
+    title: "5. Can we bring alcohol or other such things inside event?",
+    desc: "No, bringing alcohol or any other such items into the event is not allowed. However, don't worry! We will have a variety of beers (pint) from multiple brands available inside for you to enjoy.",
   },
+  {
+    title: "6: Are multiple entries and exits allowed?",
+    desc: "Yes, multiple entries and exits will be allowed throughout the event. Enjoy the freedom to come and go as you please!"
+  }
 ];
 
 export function Faq() {
@@ -35,15 +39,15 @@ export function Faq() {
       <div className="container mx-auto">
         <div className="text-center">
           <Typography variant="h1" color="blue-gray" className="mb-4">
-            Frequently asked questions
+            <u>Frequently asked questions</u>
           </Typography>
           <Typography
             variant="lead"
             className="mx-auto mb-24 lg:w-3/5 !text-gray-500"
           >
-            Welcome to the AI Conference 2023 FAQ section. We&apos;re here to
+            Welcome to the Holi Madness FAQ section. We&apos;re here to
             address your most common queries and provide you with the
-            information you need to make the most of your conference experience.
+            information you need to make the most of your experience with us.
           </Typography>
         </div>
 

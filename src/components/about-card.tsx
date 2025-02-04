@@ -9,12 +9,16 @@ interface AboutCardProp {
   title: string;
   subTitle: string;
   description: string;
+  imageUrl: string;
 }
 
-export function AboutCard({ title, description, subTitle }: AboutCardProp) {
+export function AboutCard({ title, description, subTitle, imageUrl }: AboutCardProp) {
   return (
     <Card shadow={false}>
-      <CardBody className="h-[453px] p-5 flex flex-col justify-center items-center rounded-2xl bg-gray-900 ">
+      <CardBody className="h-[453px] p-5 flex flex-col justify-center items-center rounded-2xl bg-cover bg-center bg-no-repeat "
+       style={{ backgroundImage: `url(${imageUrl})` }}>
+        <div className="absolute inset-0 bg-black opacity-50 rounded-2xl"></div> 
+        <div className="relative z-10 flex flex-col items-center text-center w-full">
         <Typography variant="h6" className="mb-4 text-center" color="white">
           {subTitle}
         </Typography>
@@ -27,9 +31,10 @@ export function AboutCard({ title, description, subTitle }: AboutCardProp) {
         >
           {description}
         </Typography>
-        <Button color="white" size="sm">
+        {/* <Button color="white" size="sm">
           view details
-        </Button>
+        </Button> */}
+        </div>
       </CardBody>
     </Card>
   );

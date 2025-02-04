@@ -7,27 +7,49 @@ export function Footer() {
   return (
     <footer className="pb-5 p-10 md:pt-10">
       <div className="container flex flex-col mx-auto">
-        <div className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center !items-center bg-gray-900 max-w-6xl mx-auto rounded-2xl p-5 ">
+        <div className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center !items-center bg-gray-900 max-w-6xl mx-auto rounded-2xl p-5 relative"
+          style={{ backgroundImage: 'url("/image/about-us_3_1.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}
+        >
+          <div className="absolute inset-0 bg-black opacity-15 rounded-2xl"></div>
           <Typography
             className="text-2xl md:text-3xl text-center font-bold "
             color="white"
           >
-            Join now and get 30% OFF!
+            Stay connected with us on our socials to get the latest updates!
           </Typography>
           <Typography
             color="white"
             className=" md:w-7/12 text-center my-3 !text-base"
+            style={{ fontWeight: "bolder" }}
           >
-            Don&apos;t miss out on this exclusive offer that will end soon.
+            Don&apos;t miss out our events updates & exciting surpirses. Connect with us now!
           </Typography>
-          <div className="flex w-full md:w-fit gap-3 mt-2 flex-col md:flex-row">
-            <Button color="white" size="md">
-              buy ticket
+          <div className="flex w-full md:w-fit gap-3 mt-2 flex-col md:flex-row relative z-20">
+          <a href="https://whatsapp.com/channel/0029Vb50Kv35Ejy0L2QwLG3r" target="_blank" rel="noopener noreferrer">
+            <Button color="white" size="md" className="flex items-center">
+              <i className="fa-brands fa-whatsapp mr-2 text-lg" />
+              WhatsApp
             </Button>
+            </a>
+            <a href="https://www.instagram.com/vibeify.live?igsh=MTd1NXZzYmI3aWloZQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+            <Button color="white" size="md" className="flex items-center">
+              <i className="fa-brands fa-instagram mr-2 text-lg" />
+              Instagram
+            </Button>
+            </a>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center !justify-between">
-          <Typography
+        <Typography
+          color="blue-gray"
+          className="text-center mt-12 font-normal !text-gray-700"
+        >
+          &copy; {CURRENT_YEAR} Developed by{" "}
+          <a href="https://www.bytearoo.com" target="_blank">
+            <u><b>Bytearoo</b></u>
+          </a>
+        </Typography>
+        <div className="flex flex-col md:flex-row items-center justify-center w-full">
+          {/* <Typography
             as="a"
             href="https://www.material-tailwind.com"
             target="_blank"
@@ -50,36 +72,26 @@ export function Footer() {
                 </Typography>
               </li>
             ))}
-          </ul>
+          </ul> */}
           <div className="flex w-fit justify-center gap-2">
-            <IconButton size="sm" color="gray" variant="text">
+            {/* <IconButton size="sm" color="gray" variant="text">
               <i className="fa-brands fa-twitter text-lg" />
             </IconButton>
             <IconButton size="sm" color="gray" variant="text">
               <i className="fa-brands fa-youtube text-lg" />
-            </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-instagram text-lg" />
-            </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-github text-lg" />
-            </IconButton>
+            </IconButton> */}
+            <a href="https://whatsapp.com/channel/0029Vb50Kv35Ejy0L2QwLG3r" target="_blank" rel="noopener noreferrer">
+              <IconButton size="sm" color="gray" variant="text">
+                <i className="fa-brands fa-whatsapp text-lg" />
+              </IconButton>
+            </a>
+            <a href="https://www.instagram.com/vibeify.live?igsh=MTd1NXZzYmI3aWloZQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+              <IconButton size="sm" color="gray" variant="text">
+                <i className="fa-brands fa-instagram text-lg" />
+              </IconButton>
+            </a>
           </div>
         </div>
-        <Typography
-          color="blue-gray"
-          className="text-center mt-12 font-normal !text-gray-700"
-        >
-          &copy; {CURRENT_YEAR} Made with{" "}
-          <a href="https://www.material-tailwind.com" target="_blank">
-            Material Tailwind
-          </a>{" "}
-          by{" "}
-          <a href="https://www.creative-tim.com" target="_blank">
-            Creative Tim
-          </a>
-          .
-        </Typography>
       </div>
     </footer>
   );

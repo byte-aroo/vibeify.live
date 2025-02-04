@@ -4,7 +4,7 @@ import { Button } from "@material-tailwind/react";
 
 export function FixedPlugin() {
   return (
-    <a href="https://www.material-tailwind.com" target="_blank">
+    <a href="https://whatsapp.com/channel/0029Vb50Kv35Ejy0L2QwLG3r" target="_blank">
       <Button
         color="white"
         size="sm"
@@ -14,10 +14,10 @@ export function FixedPlugin() {
           width={128}
           height={128}
           className="w-5 h-5"
-          alt="Material Tailwind"
-          src="https://www.material-tailwind.com/favicon.png"
+          alt="WhatsApp"
+          src="/logos/WhatsApp.png"
         />{" "}
-        Made With Material Tailwind
+        Join our WhatsApp Channel
       </Button>
     </a>
   );

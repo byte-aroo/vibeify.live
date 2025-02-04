@@ -55,7 +55,7 @@ export function EventContentCard({
         <div className="flex items-center gap-4">
           <Avatar
             variant="circular"
-            src="/logos/spotify-logo.png"
+            src="/logos/logo-vibeify.png"
             alt="spotify"
             size="lg"
           />
@@ -63,7 +63,7 @@ export function EventContentCard({
             <Typography variant="h6" color="blue-gray" className="mb-0.5">
               {name}
             </Typography>
-            <Typography variant="small" className="font-normal !text-gray-500">
+            <Typography variant="small" className="font-normal !text-gray-750" style={{fontWeight: "bold", fontStyle: "italic"}}>
               {position}
             </Typography>
           </div>

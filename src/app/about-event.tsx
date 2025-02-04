@@ -5,16 +5,18 @@ import AboutCard from "@/components/about-card";
 
 const EVENT_INFO = [
   {
-    title: "Cutting-Edge Insights!",
+    title: "Unforgettable Entertainment!",
     description:
-      "Gain deep insights into the latest AI trends, developments, and applications that are reshaping industries worldwide. ",
-    subTitle: "Presentation",
+      "At VIBEIFY.LIVE, expect non-stop excitement with electrifying performances and immersive experiences that keep you in the moment.",
+    subTitle: "",
+    imageUrl: "/image/about-us_1.jpg"
   },
   {
-    title: "Practical Knowledge!",
+    title: "New Connections and Networking",
     description:
-      "Attend workshops and hands-on sessions to acquire practical skills that you can apply immediately.",
-    subTitle: "Workshops",
+      "Meet like-minded people, build new friendships, and connect with influencers and professionals in a lively, fun atmosphere.",
+    subTitle: "",
+    imageUrl: "/image/about-us_2.jpg"
   },
 ];
 
@@ -22,19 +24,22 @@ export function AboutEvent() {
   return (
     <section className="container mx-auto flex flex-col items-center px-4 py-10">
       <Typography variant="h6" className="text-center mb-2" color="orange">
-        About the event
+        About Us
       </Typography>
       <Typography variant="h3" className="text-center" color="blue-gray">
-        Why Attend?
+        Why Attend Our Events ?
       </Typography>
       <Typography
         variant="lead"
         className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
       >
-        Welcome to the AI Conference 2023, where the future unfolds! Whether
-        you&apos;re a seasoned AI professional, a curious newcomer, or a
-        business leader looking to harness the power of AI, this conference is
-        designed to inspire, educate, and connect.
+        At <b>VIBEIFY.LIVE</b>, we’re all about creating experiences that get you feeling the vibe and living the moment! 
+        We specialize in hosting exciting events that bring people together—whether it’s a high-energy music festival, 
+        an exclusive corporate gathering, or a fun-filled themed party. Every event we curate is designed to offer something special, 
+        blending incredible entertainment with unforgettable experiences. With a focus on seamless organization, 
+        top-tier performances, and a vibrant atmosphere, VIBEIFY.LIVE guarantees an experience you’ll remember long after the event ends. 
+        Connect with us on our socials to get updates about our events—<b>no spam</b>, just the good stuff. <br />
+        At VIBEIFY.LIVE, we don’t just host events:<br /><i><b>WE CREATE MEMORIES THAT LAST A LIFETIME.</b></i>
       </Typography>
       <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4 ">
         {EVENT_INFO.map((props, idx) => (
@@ -42,9 +47,10 @@ export function AboutEvent() {
         ))}
         <div className="md:col-span-2">
           <AboutCard
-            title="Networking!"
-            subTitle="Community"
-            description="Connect with industry leaders, AI experts, and fellow enthusiasts to build valuable professional relationships."
+            title="Escape and Relaxation!"
+            subTitle=""
+            description="Step away from the everyday hustle and enjoy a fun-filled escape that helps you unwind, recharge, and make lasting memories."
+            imageUrl="/image/about-us_3.jpg"
           />
         </div>
       </div>
