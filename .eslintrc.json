@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react/jsx-no-comment-textnodes": "off",
+    "react/prop-types": "off",  // You can add other rules you want to disable
+    "react/jsx-pascal-case": "off"  // Disable Pascal case check for component names, for example
+    // Add other rules you want to disable globally
+  }
 }

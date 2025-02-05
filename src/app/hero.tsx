@@ -18,7 +18,7 @@ function Hero() {
   return (
     <div
       className="relative min-h-screen w-full bg-cover bg-no-repeat"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}${backgroundImage})` }}
     >
     {/*</div><div className="relative min-h-screen w-full bg-[url('/image/event.jpg')] bg-cover bg-no-repeat">*/}
     <div className="absolute inset-0 h-full w-full bg-gray-900/60" />
@@ -27,7 +27,7 @@ function Hero() {
         {/* <Typography variant="h3" color="white" className="mb-2">
           29-31 August @ New York
         </Typography> */}
-        <Typography variant="h1" color="white" className="lg:max-w-3xl">
+        <Typography variant="h1" color="white" className="lg:max-w-3xl" placeholder="" onPointerEnterCapture={()=>{}} onPointerLeaveCapture={()=>{}}>
           Feel the Vibe, <br />
           Live the Experience
         </Typography>

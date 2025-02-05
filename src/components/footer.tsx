@@ -8,12 +8,13 @@ export function Footer() {
     <footer className="pb-5 p-10 md:pt-10">
       <div className="container flex flex-col mx-auto">
         <div className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center !items-center bg-gray-900 max-w-6xl mx-auto rounded-2xl p-5 relative"
-          style={{ backgroundImage: 'url("/image/about-us_3_1.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}
+          style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/image/about-us_3_1.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
           <div className="absolute inset-0 bg-black opacity-15 rounded-2xl"></div>
           <Typography
             className="text-2xl md:text-3xl text-center font-bold "
             color="white"
+            {...({} as React.ComponentProps<typeof Typography>)}
           >
             Stay connected with us on our socials to get the latest updates!
           </Typography>
@@ -21,18 +22,19 @@ export function Footer() {
             color="white"
             className=" md:w-7/12 text-center my-3 !text-base"
             style={{ fontWeight: "bolder" }}
+            {...({} as React.ComponentProps<typeof Typography>)}
           >
             Don&apos;t miss out our events updates & exciting surpirses. Connect with us now!
           </Typography>
           <div className="flex w-full md:w-fit gap-3 mt-2 flex-col md:flex-row relative z-20">
           <a href="https://whatsapp.com/channel/0029Vb50Kv35Ejy0L2QwLG3r" target="_blank" rel="noopener noreferrer">
-            <Button color="white" size="md" className="flex items-center">
+            <Button color="white" size="md" className="flex items-center" {...({} as React.ComponentProps<typeof Button>)}>
               <i className="fa-brands fa-whatsapp mr-2 text-lg" />
               WhatsApp
             </Button>
             </a>
             <a href="https://www.instagram.com/vibeify.live?igsh=MTd1NXZzYmI3aWloZQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
-            <Button color="white" size="md" className="flex items-center">
+            <Button color="white" size="md" className="flex items-center" {...({} as React.ComponentProps<typeof Button>)}>
               <i className="fa-brands fa-instagram mr-2 text-lg" />
               Instagram
             </Button>
@@ -41,7 +43,8 @@ export function Footer() {
         </div>
         <Typography
           color="blue-gray"
-          className="text-center mt-12 font-normal !text-gray-700"
+          className="text-center mt-12 font-normal !text-gray-700" 
+          {...({} as React.ComponentProps<typeof Typography>)}
         >
           &copy; {CURRENT_YEAR} Developed by{" "}
           <a href="https://www.bytearoo.com" target="_blank">
@@ -81,12 +84,12 @@ export function Footer() {
               <i className="fa-brands fa-youtube text-lg" />
             </IconButton> */}
             <a href="https://whatsapp.com/channel/0029Vb50Kv35Ejy0L2QwLG3r" target="_blank" rel="noopener noreferrer">
-              <IconButton size="sm" color="gray" variant="text">
+              <IconButton size="sm" color="gray" variant="text" {...({} as React.ComponentProps<typeof IconButton>)}>
                 <i className="fa-brands fa-whatsapp text-lg" />
               </IconButton>
             </a>
             <a href="https://www.instagram.com/vibeify.live?igsh=MTd1NXZzYmI3aWloZQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
-              <IconButton size="sm" color="gray" variant="text">
+              <IconButton size="sm" color="gray" variant="text" {...({} as React.ComponentProps<typeof IconButton>)}>
                 <i className="fa-brands fa-instagram text-lg" />
               </IconButton>
             </a>

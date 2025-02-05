@@ -38,12 +38,13 @@ export function Faq() {
     <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto">
         <div className="text-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4">
+          <Typography variant="h1" color="blue-gray" className="mb-4" placeholder="" onPointerEnterCapture={()=>{}} onPointerLeaveCapture={()=>{}}>
             <u>Frequently asked questions</u>
           </Typography>
           <Typography
             variant="lead"
-            className="mx-auto mb-24 lg:w-3/5 !text-gray-500"
+            className="mx-auto mb-24 lg:w-3/5 !text-gray-500" 
+            placeholder="" onPointerEnterCapture={()=>{}} onPointerLeaveCapture={()=>{}}
           >
             Welcome to the Holi Madness FAQ section. We&apos;re here to
             address your most common queries and provide you with the
@@ -56,15 +57,17 @@ export function Faq() {
             <Accordion
               key={key}
               open={open === key + 1}
-              onClick={() => handleOpen(key + 1)}
+              onClick={() => handleOpen(key + 1)} 
+              {...({} as React.ComponentProps<typeof Accordion>)}
             >
-              <AccordionHeader className="text-left text-gray-900">
+              <AccordionHeader className="text-left text-gray-900" {...({} as React.ComponentProps<typeof AccordionHeader>)}>
                 {title}
               </AccordionHeader>
               <AccordionBody>
                 <Typography
                   color="blue-gray"
-                  className="font-normal text-gray-500"
+                  className="font-normal text-gray-500" 
+                  placeholder="" onPointerEnterCapture={()=>{}} onPointerLeaveCapture={()=>{}}
                 >
                   {desc}
                 </Typography>

@@ -28,7 +28,8 @@ function NavItem({ children, href }: NavItemProps) {
         href={href || "#"}
         target={href ? "_blank" : "_self"}
         variant="paragraph"
-        className="flex items-center gap-2 font-medium"
+        className="flex items-center gap-2 font-medium" 
+        {...({} as React.ComponentProps<typeof Typography>)}
       >
         {children}
       </Typography>
@@ -85,12 +86,14 @@ export function Navbar() {
       fullWidth
       blurred={false}
       color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0"
+      className="fixed top-0 z-50 border-0" 
+      {...({} as React.ComponentProps<typeof MTNavbar>)}
     >
       <div className="container mx-auto flex items-center justify-between">
         <Typography
           color={isScrolling ? "blue-gray" : "white"}
           className="text-lg font-bold"
+          {...({} as React.ComponentProps<typeof Typography>)}
         >
           <b>VIBEIFY.LIVE</b>
         </Typography>
@@ -127,7 +130,7 @@ export function Navbar() {
           )}
         </IconButton> */}
       </div>
-      <Collapse open={open}>
+      <Collapse open={open} {...({} as React.ComponentProps<typeof Collapse>)}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900">
             {/* {NAV_MENU.map(({ name, icon: Icon, href }) => (
