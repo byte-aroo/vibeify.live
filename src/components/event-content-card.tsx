@@ -39,9 +39,10 @@ export function EventContentCard({
         <Image
           width={768}
           height={768}
-          src={`${process.env.PUBLIC_URL}/images/banner.jpg`} 
+          src="./image/holievent.png" 
           alt="Banner Image"
           className="h-full w-full object-cover"
+          // style={{ backgroundImage: `url(${process.env.PUBLIC_URL}"/image/holievent.png")` }}
         />
       </CardHeader>
       <CardBody className="col-span-full lg:col-span-3" {...({} as React.ComponentProps<typeof CardBody>)}>

@@ -4,7 +4,7 @@
   "private": true,
   "author": "Bytearoo",
   "license": "See license in https://www.bytearoo.com",
-  "homepage": "https://byte-aroo.github.io/vibeify.live",
+  "homepage": "/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d out",

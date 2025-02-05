@@ -18,7 +18,7 @@ function Hero() {
   return (
     <div
       className="relative min-h-screen w-full bg-cover bg-no-repeat"
-      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}${backgroundImage})` }}
+      style={{ backgroundImage: `url(.${backgroundImage})` }}
     >
     {/*</div><div className="relative min-h-screen w-full bg-[url('/image/event.jpg')] bg-cover bg-no-repeat">*/}
     <div className="absolute inset-0 h-full w-full bg-gray-900/60" />

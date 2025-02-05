@@ -16,7 +16,7 @@ const EVENT_CONTENT = [
     name: "Holi Madness",
     position: "Where Colours Collide",
     panel: "Location: Jaipur, Rajathan",
-    img: "/image/holi_event.png",
+    img: "/image/holievent.png",
   },
   // {
   //   title: "Introduction to Machine Learning",
