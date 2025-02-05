@@ -28,7 +28,7 @@ export default function RootLayout({
           data-site="vibeify.live"
           src="https://vibeify.live"
         ></script>
-        <link rel="shortcut icon" href="/logos/favicon.png" type="image/png" />
+        <link rel="shortcut icon" href="/vibeify.live/logos/favicon.png" type="image/png" />
       </head>
       <body className={roboto.className}>
         <Layout>

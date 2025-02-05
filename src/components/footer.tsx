@@ -27,23 +27,36 @@ export function Footer() {
             Don&apos;t miss out our events updates & exciting surpirses. Connect with us now!
           </Typography>
           <div className="flex w-full md:w-fit gap-3 mt-2 flex-col md:flex-row relative z-20">
-          <a href="https://whatsapp.com/channel/0029Vb50Kv35Ejy0L2QwLG3r" target="_blank" rel="noopener noreferrer">
-            <Button color="white" size="md" className="flex items-center" {...({} as React.ComponentProps<typeof Button>)}>
-              <i className="fa-brands fa-whatsapp mr-2 text-lg" />
+            <Button
+              color="white"
+              size="md"
+              className="flex items-center justify-center gap-2 min-w-[200px]"
+              onClick={(e) => {
+                window.open("https://whatsapp.com/channel/0029Vb50Kv35Ejy0L2QwLG3r", "_blank");
+              }}
+              {...({} as React.ComponentProps<typeof Button>)}
+            >
+              <i className="fa-brands fa-whatsapp text-lg" />
               WhatsApp
             </Button>
-            </a>
-            <a href="https://www.instagram.com/vibeify.live?igsh=MTd1NXZzYmI3aWloZQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
-            <Button color="white" size="md" className="flex items-center" {...({} as React.ComponentProps<typeof Button>)}>
-              <i className="fa-brands fa-instagram mr-2 text-lg" />
-              Instagram
-            </Button>
-            </a>
+            
+              <Button 
+                color="white" 
+                size="md" 
+                className="flex items-center justify-center gap-2 min-w-[200px]" 
+                onClick={(e) => {
+                  window.open("https://www.instagram.com/vibeify.live?igsh=MTd1NXZzYmI3aWloZQ%3D%3D&utm_source=qr", "_blank");
+                }}
+                {...({} as React.ComponentProps<typeof Button>)}>
+                <i className="fa-brands fa-instagram mr-2 text-lg" />
+                Instagram
+              </Button>
+            
           </div>
         </div>
         <Typography
           color="blue-gray"
-          className="text-center mt-12 font-normal !text-gray-700" 
+          className="text-center mt-12 font-normal !text-gray-700"
           {...({} as React.ComponentProps<typeof Typography>)}
         >
           &copy; {CURRENT_YEAR} Developed by{" "}

@@ -16,9 +16,9 @@ export function FixedPlugin() {
           height={128}
           className="w-5 h-5"
           alt="WhatsApp"
-          src="/logos/WhatsApp.png"
+          src="/vibeify.live/logos/WhatsApp.png"
         />{" "}
-        Join our WhatsApp Channel
+        WhatsApp
       </Button>
     </a>
   );

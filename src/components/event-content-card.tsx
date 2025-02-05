@@ -41,7 +41,7 @@ export function EventContentCard({
           height={768}
           src="./image/holievent.png" 
           alt="Banner Image"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain"
           // style={{ backgroundImage: `url(${process.env.PUBLIC_URL}"/image/holievent.png")` }}
         />
       </CardHeader>
