@@ -4,7 +4,7 @@
   "private": true,
   "author": "Bytearoo",
   "license": "See license in https://www.bytearoo.com",
-  "homepage": "/",
+  "homepage": "https://byte-aroo.github.io/BytearooWebsite/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d out",
@@ -16,9 +16,9 @@
   "dependencies": {
     "@heroicons/react": "2.0.18",
     "@material-tailwind/react": "2.1.2",
-    "next": "13.4.0",
-    "react": "18",
-    "react-dom": "18"
+    "next": "^13.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/node": "20",
